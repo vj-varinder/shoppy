@@ -1,0 +1,32 @@
+DB structure
+
+Table-Name (colums)
+	For Products
+
+		Section (id, name, desc)
+			Category (id, sectionid, name, desc)
+				Sub-Category (id, catid, name, desc)
+					Product (id, sub-catid, name, desc, price, imageid)
+
+		Product-Image (imageid, image_name, desc)
+
+		Stock (productid, quantity)
+
+		Discount (discountid, productid, percent)
+
+		Cart (cartid, userid/guest(tempid), productid, quantity)
+
+		Order (orderid, productid, userid, order_date, order_status, total_price)
+
+		Order-Status (statusid, name, desc) - (new/received/in-shipping/delivered/complete)
+
+		Invoice (Invoiceid, userid, orderid, invoice_status, payment_type)
+
+		Invoice-Status (statusid, name, desc) - (unpaid/paid)
+
+		Payment-type (paymenttypeid, name, desc)
+
+
+	For Users
+
+		Users (id, name, email, password, address1, address2, town, zipcode, active, login-attempts, locked)

@@ -1,0 +1,6 @@
+<?php
+
+  Include "index.php";
+?>
+
+<div> hello products</div>
